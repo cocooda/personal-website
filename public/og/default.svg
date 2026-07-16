@@ -1,0 +1,10 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#08090B"/>
+  <rect x="58" y="58" width="1084" height="514" rx="26" fill="#101216" stroke="#2A2E35"/>
+  <circle cx="1002" cy="152" r="88" fill="#6D9F9B" opacity="0.14"/>
+  <circle cx="182" cy="468" r="118" fill="#8EA4B8" opacity="0.12"/>
+  <text x="104" y="178" fill="#8EA4B8" font-family="Arial, sans-serif" font-size="22" font-weight="700">AI Product Engineer / Applied AI Engineer</text>
+  <text x="104" y="284" fill="#F2EFE7" font-family="Arial, sans-serif" font-size="58" font-weight="700">Nguyen Duy Duc</text>
+  <text x="104" y="366" fill="#F2EFE7" font-family="Arial, sans-serif" font-size="42" font-weight="700">Building measurable, traceable AI products.</text>
+  <text x="104" y="452" fill="#B7B1A7" font-family="Arial, sans-serif" font-size="25">Product discovery, retrieval, evaluation, deployment, observability.</text>
+</svg>

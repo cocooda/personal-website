@@ -1,0 +1,44 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Legolas AI benchmark visualization</title>
+  <desc id="desc">Three benchmark metrics from the formal CV: citation hit rate, legal-number recall, and multi-source fact score.</desc>
+  <rect width="1280" height="760" rx="24" fill="#090A0D"/>
+  <rect x="58" y="58" width="1164" height="644" rx="18" fill="#101216" stroke="#2A2E35"/>
+  <text x="96" y="116" fill="#F2EFE7" font-family="Arial, sans-serif" font-size="34" font-weight="700">30-case Multi-source Benchmark</text>
+  <text x="96" y="146" fill="#B7B1A7" font-family="Arial, sans-serif" font-size="15">CV source of truth; overlap baseline context. Older unrelated experiment values are not mixed here.</text>
+  <g font-family="Arial, sans-serif" font-size="16" fill="#B7B1A7">
+    <text x="168" y="593">0</text>
+    <text x="391" y="593">25</text>
+    <text x="617" y="593">50</text>
+    <text x="843" y="593">75</text>
+    <text x="1058" y="593">100</text>
+  </g>
+  <g stroke="#2A2E35">
+    <path d="M178 540H1080"/>
+    <path d="M178 500H1080"/>
+    <path d="M178 380H1080"/>
+    <path d="M178 260H1080"/>
+    <path d="M178 210V540"/>
+    <path d="M404 210V540"/>
+    <path d="M629 210V540"/>
+    <path d="M855 210V540"/>
+    <path d="M1080 210V540"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#F2EFE7">
+    <text x="178" y="248">Citation hit rate</text>
+    <text x="178" y="368">Legal-number recall</text>
+    <text x="178" y="488">Multi-source fact score</text>
+  </g>
+  <g>
+    <rect x="404" y="270" width="421" height="28" rx="14" fill="#8EA4B8"/>
+    <rect x="178" y="270" width="421" height="28" rx="14" fill="#3A414B"/>
+    <rect x="742" y="390" width="274" height="28" rx="14" fill="#6D9F9B"/>
+    <rect x="178" y="390" width="556" height="28" rx="14" fill="#3A414B"/>
+    <rect x="720" y="510" width="271" height="28" rx="14" fill="#948AA8"/>
+    <rect x="178" y="510" width="541" height="28" rx="14" fill="#3A414B"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="15" fill="#E7E2D8" font-weight="700">
+    <text x="612" y="291">46.67% to 80.00%</text>
+    <text x="830" y="411">61.67% to 90.00%</text>
+    <text x="808" y="531">60.00% to 90.00%</text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">HanoiWorld world-model diagram</title>
+  <desc id="desc">Public-safe diagram of observation encoding, latent dynamics, actor-critic control, simulation, and evaluation.</desc>
+  <rect width="1280" height="760" rx="24" fill="#090A0D"/>
+  <rect x="56" y="56" width="1168" height="648" rx="18" fill="#101216" stroke="#2A2E35"/>
+  <text x="96" y="116" fill="#F2EFE7" font-family="Arial, sans-serif" font-size="34" font-weight="700">HanoiWorld: Representation to Planning Loop</text>
+  <text x="96" y="146" fill="#B7B1A7" font-family="Arial, sans-serif" font-size="15">Qualitative project route: no unsupported numeric performance claims.</text>
+  <g fill="#15181D" stroke="#3A414B">
+    <rect x="110" y="286" width="178" height="112" rx="14"/>
+    <rect x="368" y="286" width="178" height="112" rx="14"/>
+    <rect x="626" y="286" width="178" height="112" rx="14"/>
+    <rect x="884" y="286" width="178" height="112" rx="14"/>
+    <rect x="506" y="512" width="268" height="88" rx="14"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="134" y="326" fill="#8EA4B8" font-size="13" font-weight="700">INPUT</text>
+    <text x="134" y="360" fill="#F2EFE7" font-size="21" font-weight="700">Driving scenes</text>
+    <text x="392" y="326" fill="#6D9F9B" font-size="13" font-weight="700">ENCODER</text>
+    <text x="392" y="360" fill="#F2EFE7" font-size="21" font-weight="700">JEPA-style</text>
+    <text x="650" y="326" fill="#948AA8" font-size="13" font-weight="700">WORLD MODEL</text>
+    <text x="650" y="360" fill="#F2EFE7" font-size="21" font-weight="700">RSSM latent</text>
+    <text x="908" y="326" fill="#8EA4B8" font-size="13" font-weight="700">CONTROL</text>
+    <text x="908" y="360" fill="#F2EFE7" font-size="21" font-weight="700">Actor-critic</text>
+    <text x="534" y="547" fill="#6D9F9B" font-size="13" font-weight="700">EVALUATION TYPES</text>
+    <text x="534" y="578" fill="#F2EFE7" font-size="20" font-weight="700">Collision, reward, scenario metrics</text>
+  </g>
+  <g stroke="#8EA4B8" stroke-width="2" stroke-linecap="round" opacity="0.68">
+    <path d="M288 342H368"/>
+    <path d="M546 342H626"/>
+    <path d="M804 342H884"/>
+    <path d="M973 398C973 496 774 501 774 556"/>
+    <path d="M506 556C332 550 199 484 199 398"/>
+  </g>
+  <circle cx="199" cy="342" r="36" fill="#0B0D10" stroke="#3A414B"/>
+  <circle cx="457" cy="342" r="36" fill="#0B0D10" stroke="#6D9F9B"/>
+  <circle cx="715" cy="342" r="36" fill="#0B0D10" stroke="#948AA8"/>
+  <circle cx="973" cy="342" r="36" fill="#0B0D10" stroke="#8EA4B8"/>
+</svg>

@@ -1,0 +1,40 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Powfolio pipeline diagram</title>
+  <desc id="desc">Local-first pipeline from local repository evidence to redaction review and public-safe exports.</desc>
+  <rect width="1280" height="760" rx="24" fill="#090A0D"/>
+  <rect x="56" y="56" width="1168" height="648" rx="18" fill="#101216" stroke="#2A2E35"/>
+  <text x="96" y="116" fill="#F2EFE7" font-family="Arial, sans-serif" font-size="34" font-weight="700">Powfolio Local-first Pipeline</text>
+  <text x="96" y="146" fill="#B7B1A7" font-family="Arial, sans-serif" font-size="15">Currently building: tested MVP, no public adoption claim.</text>
+  <g fill="#15181D" stroke="#3A414B">
+    <rect x="100" y="260" width="178" height="140" rx="14"/>
+    <rect x="332" y="260" width="178" height="140" rx="14"/>
+    <rect x="564" y="260" width="178" height="140" rx="14"/>
+    <rect x="796" y="260" width="178" height="140" rx="14"/>
+    <rect x="1028" y="260" width="152" height="140" rx="14"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="126" y="304" fill="#8EA4B8" font-size="13" font-weight="700">LOCAL</text>
+    <text x="126" y="339" fill="#F2EFE7" font-size="22" font-weight="700">Repo</text>
+    <text x="126" y="368" fill="#B7B1A7" font-size="15">Docs, tests, git</text>
+    <text x="358" y="304" fill="#6D9F9B" font-size="13" font-weight="700">COLLECT</text>
+    <text x="358" y="339" fill="#F2EFE7" font-size="22" font-weight="700">Evidence</text>
+    <text x="358" y="368" fill="#B7B1A7" font-size="15">Deterministic signals</text>
+    <text x="590" y="304" fill="#948AA8" font-size="13" font-weight="700">SOURCE</text>
+    <text x="590" y="339" fill="#F2EFE7" font-size="22" font-weight="700">Evidence map</text>
+    <text x="590" y="368" fill="#B7B1A7" font-size="15">Claims and IDs</text>
+    <text x="822" y="304" fill="#8EA4B8" font-size="13" font-weight="700">REVIEW</text>
+    <text x="822" y="339" fill="#F2EFE7" font-size="22" font-weight="700">Redaction</text>
+    <text x="822" y="368" fill="#B7B1A7" font-size="15">Secrets and privacy</text>
+    <text x="1054" y="304" fill="#6D9F9B" font-size="13" font-weight="700">EXPORT</text>
+    <text x="1054" y="339" fill="#F2EFE7" font-size="22" font-weight="700">Showcase</text>
+    <text x="1054" y="368" fill="#B7B1A7" font-size="15">HTML + MD</text>
+  </g>
+  <g stroke="#8EA4B8" stroke-width="2" stroke-linecap="round" opacity="0.7">
+    <path d="M278 330H332"/>
+    <path d="M510 330H564"/>
+    <path d="M742 330H796"/>
+    <path d="M974 330H1028"/>
+  </g>
+  <rect x="402" y="516" width="476" height="66" rx="33" fill="#0B0D10" stroke="#3A414B"/>
+  <text x="452" y="557" fill="#E7E2D8" font-family="Arial, sans-serif" font-size="17" font-weight="700">Audited MVP signal: 26 passing tests, not adoption.</text>
+</svg>

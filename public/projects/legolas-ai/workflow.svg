@@ -1,0 +1,36 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Legolas AI workflow diagram</title>
+  <desc id="desc">Three product workflows: citation-grounded question answering, drafting, and document review.</desc>
+  <rect width="1280" height="760" rx="24" fill="#090A0D"/>
+  <rect x="58" y="58" width="1164" height="644" rx="18" fill="#101216" stroke="#2A2E35"/>
+  <text x="94" y="116" fill="#F2EFE7" font-family="Arial, sans-serif" font-size="34" font-weight="700">Product Workflow Surface</text>
+  <text x="94" y="146" fill="#B7B1A7" font-family="Arial, sans-serif" font-size="15">The MVP organizes legal AI into three user-facing workflows.</text>
+  <g stroke="#3A414B" fill="#15181D">
+    <rect x="104" y="216" width="298" height="292" rx="14"/>
+    <rect x="491" y="216" width="298" height="292" rx="14"/>
+    <rect x="878" y="216" width="298" height="292" rx="14"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="134" y="270" fill="#8EA4B8" font-size="13" font-weight="700">01</text>
+    <text x="134" y="311" fill="#F2EFE7" font-size="26" font-weight="700">Cited Q&amp;A</text>
+    <text x="134" y="354" fill="#B7B1A7" font-size="16">Ask legal questions in Vietnamese.</text>
+    <text x="134" y="384" fill="#B7B1A7" font-size="16">Return answers with source references.</text>
+    <text x="134" y="414" fill="#B7B1A7" font-size="16">Warn when evidence is insufficient.</text>
+    <text x="521" y="270" fill="#6D9F9B" font-size="13" font-weight="700">02</text>
+    <text x="521" y="311" fill="#F2EFE7" font-size="26" font-weight="700">Drafting</text>
+    <text x="521" y="354" fill="#B7B1A7" font-size="16">Plan, retrieve, and generate drafts.</text>
+    <text x="521" y="384" fill="#B7B1A7" font-size="16">Support stream, revise, and patch.</text>
+    <text x="521" y="414" fill="#B7B1A7" font-size="16">Keep citations near legal grounds.</text>
+    <text x="908" y="270" fill="#948AA8" font-size="13" font-weight="700">03</text>
+    <text x="908" y="311" fill="#F2EFE7" font-size="26" font-weight="700">Document Review</text>
+    <text x="908" y="354" fill="#B7B1A7" font-size="16">Upload a temporary review target.</text>
+    <text x="908" y="384" fill="#B7B1A7" font-size="16">Detect risks and cite evidence.</text>
+    <text x="908" y="414" fill="#B7B1A7" font-size="16">Separate review uploads from corpus.</text>
+  </g>
+  <g stroke="#8EA4B8" stroke-width="2" stroke-linecap="round" opacity="0.65">
+    <path d="M402 362H491"/>
+    <path d="M789 362H878"/>
+  </g>
+  <rect x="326" y="578" width="628" height="54" rx="27" fill="#0B0D10" stroke="#3A414B"/>
+  <text x="378" y="612" fill="#E7E2D8" font-family="Arial, sans-serif" font-size="16" font-weight="700">Shared product rule: cite sources or warn when evidence is thin.</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Legolas AI evidence map</title>
+  <desc id="desc">Public-safe diagram showing workflows, retrieval, evaluation, deployment, and observability evidence.</desc>
+  <rect width="1280" height="760" rx="24" fill="#0B0D10"/>
+  <rect x="34" y="34" width="1212" height="692" rx="18" fill="#11141A" stroke="#2A2E35"/>
+  <path d="M94 132H1186" stroke="#2A2E35"/>
+  <text x="94" y="98" fill="#F2EFE7" font-family="Arial, sans-serif" font-size="34" font-weight="700">Legolas AI Evidence Field</text>
+  <text x="94" y="126" fill="#B7B1A7" font-family="Arial, sans-serif" font-size="15">Product workflows connected to retrieval, benchmark, deployment, and trace evidence.</text>
+  <g fill="#15181D" stroke="#3A414B">
+    <rect x="94" y="176" width="296" height="142" rx="12"/>
+    <rect x="492" y="176" width="296" height="142" rx="12"/>
+    <rect x="890" y="176" width="296" height="142" rx="12"/>
+    <rect x="94" y="424" width="296" height="142" rx="12"/>
+    <rect x="492" y="424" width="296" height="142" rx="12"/>
+    <rect x="890" y="424" width="296" height="142" rx="12"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="122" y="218" fill="#8EA4B8" font-size="13" font-weight="700">WORKFLOWS</text>
+    <text x="122" y="256" fill="#F2EFE7" font-size="24" font-weight="700">Q&amp;A, Drafting, Review</text>
+    <text x="122" y="288" fill="#B7B1A7" font-size="15">Three cited legal AI product surfaces.</text>
+    <text x="520" y="218" fill="#6D9F9B" font-size="13" font-weight="700">RETRIEVAL</text>
+    <text x="520" y="256" fill="#F2EFE7" font-size="24" font-weight="700">Dense + BM25 + RRF</text>
+    <text x="520" y="288" fill="#B7B1A7" font-size="15">Legal-aware ingestion and citation grounding.</text>
+    <text x="918" y="218" fill="#948AA8" font-size="13" font-weight="700">EVALUATION</text>
+    <text x="918" y="256" fill="#F2EFE7" font-size="24" font-weight="700">30-case benchmark</text>
+    <text x="918" y="288" fill="#B7B1A7" font-size="15">Multi-source benchmark against baseline.</text>
+    <text x="122" y="466" fill="#8EA4B8" font-size="13" font-weight="700">DEPLOYMENT</text>
+    <text x="122" y="504" fill="#F2EFE7" font-size="24" font-weight="700">Split cloud topology</text>
+    <text x="122" y="536" fill="#B7B1A7" font-size="15">Vercel, Render, Supabase, HF Spaces.</text>
+    <text x="520" y="466" fill="#6D9F9B" font-size="13" font-weight="700">OBSERVABILITY</text>
+    <text x="520" y="504" fill="#F2EFE7" font-size="24" font-weight="700">Trace-guided debugging</text>
+    <text x="520" y="536" fill="#B7B1A7" font-size="15">Latency, fallback, and citation failures.</text>
+    <text x="918" y="466" fill="#948AA8" font-size="13" font-weight="700">OUTCOME</text>
+    <text x="918" y="504" fill="#F2EFE7" font-size="24" font-weight="700">Top 2 Demo Day product</text>
+    <text x="918" y="536" fill="#B7B1A7" font-size="15">Program final Demo Day, restrained claim.</text>
+  </g>
+  <g stroke="#8EA4B8" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <path d="M390 247H492"/>
+    <path d="M788 247H890"/>
+    <path d="M242 318V424"/>
+    <path d="M640 318V424"/>
+    <path d="M1038 318V424"/>
+  </g>
+  <circle cx="640" cy="371" r="42" fill="#0B0D10" stroke="#6D9F9B"/>
+  <text x="608" y="378" fill="#E7E2D8" font-family="Arial, sans-serif" font-size="14" font-weight="700">TRACEABLE</text>
+</svg>
