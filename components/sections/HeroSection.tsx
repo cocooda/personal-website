@@ -19,8 +19,8 @@ export function HeroSection() {
               Explore selected work
               <ArrowDown aria-hidden="true" size={16} />
             </ButtonLink>
-            <ButtonLink href={profile.resume.href}>View resume</ButtonLink>
-            <ButtonLink href={`mailto:${profile.email}`} variant="ghost">
+            <ButtonLink href={profile.resume.pageHref}>View resume</ButtonLink>
+            <ButtonLink href={profile.contact.pageHref} variant="ghost">
               <Mail aria-hidden="true" size={16} />
               Contact
             </ButtonLink>

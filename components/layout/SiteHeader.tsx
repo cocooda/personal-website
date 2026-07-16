@@ -7,8 +7,8 @@ const navItems = [
   { label: "Process", href: "/#process" },
   { label: "Challenge", href: "/challenge" },
   { label: "About", href: "/#about" },
-  { label: "Resume", href: profile.resume.href },
-  { label: "Contact", href: `mailto:${profile.email}` },
+  { label: "Resume", href: profile.resume.pageHref },
+  { label: "Contact", href: profile.contact.pageHref },
 ];
 
 export function SiteHeader() {

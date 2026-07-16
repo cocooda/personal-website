@@ -1,12 +1,18 @@
 import type { SiteLink } from "@/lib/content/schemas";
 
+const email = "ddnguyen4779@gmail.com";
+
 export const profile = {
   name: "Nguyen Duy Duc",
   shortName: "Duc Nguyen",
   initials: "DD",
   role: "AI Product Engineer / Applied AI Engineer",
   location: "Hanoi, Vietnam",
-  email: "ddnguyen4779@gmail.com",
+  email,
+  contact: {
+    pageHref: "/#contact",
+    mailtoHref: `mailto:${email}`,
+  },
   siteUrl: "https://duc-nguyen-ai.vercel.app",
   headline: "Building AI products from ambiguous workflows to measurable production systems.",
   bio: "I work across product discovery, backend systems, retrieval and model pipelines, evaluation, deployment, observability, and iteration to turn AI concepts into usable workflows.",
@@ -14,19 +20,20 @@ export const profile = {
     "Production-oriented applied AI builder across product discovery, engineering, evaluation, deployment, observability, and iteration.",
   resume: {
     label: "Resume",
-    href: "/resume/nguyen-duy-duc-resume.pdf",
+    pageHref: "/resume",
+    pdfHref: "/resume/nguyen-duy-duc-resume.pdf",
     fileName: "nguyen-duy-duc-resume.pdf",
   },
   links: [
     {
       label: "Email",
-      href: "mailto:ddnguyen4779@gmail.com",
+      href: `mailto:${email}`,
       kind: "email",
       verified: true,
     },
     {
       label: "Resume",
-      href: "/resume/nguyen-duy-duc-resume.pdf",
+      href: "/resume",
       kind: "resume",
       verified: true,
     },

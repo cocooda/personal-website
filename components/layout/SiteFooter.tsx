@@ -9,10 +9,10 @@ export function SiteFooter() {
           {profile.name} - {profile.role}. Last updated {profile.lastUpdated}.
         </p>
         <div className="flex flex-wrap gap-4">
-          <a className="text-secondary hover:text-primary" href={`mailto:${profile.email}`}>
+          <a className="text-secondary hover:text-primary" href={profile.contact.mailtoHref}>
             Email
           </a>
-          <Link className="text-secondary hover:text-primary" href={profile.resume.href}>
+          <Link className="text-secondary hover:text-primary" href={profile.resume.pageHref}>
             Resume
           </Link>
           {profile.links

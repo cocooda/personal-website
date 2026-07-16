@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { ContactActions } from "@/components/contact/ContactActions";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { profile } from "@/content/profile";
 
@@ -13,14 +13,15 @@ export function ContactSection() {
             Need someone who can connect product ambiguity to measurable AI systems?
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-8 text-secondary">
-            Email is the Day 0 contact action. Public project links and the formal resume are available for inspection.
+            Public project links and the formal resume are available for inspection.
           </p>
+          <div className="mt-6">
+            <p className="font-mono text-xs font-bold uppercase text-muted">Email</p>
+            <p className="mt-2 select-text break-all font-mono text-lg font-semibold text-primary">{profile.email}</p>
+          </div>
+          <ContactActions email={profile.email} mailtoHref={profile.contact.mailtoHref} />
           <div className="mt-8 flex flex-wrap gap-3">
-            <ButtonLink href={`mailto:${profile.email}`} variant="primary">
-              <Mail aria-hidden="true" size={16} />
-              Email Duc
-            </ButtonLink>
-            <ButtonLink href={profile.resume.href}>View resume</ButtonLink>
+            <ButtonLink href={profile.resume.pageHref}>View resume</ButtonLink>
             <Link
               href="/work/legolas-ai"
               className="inline-flex min-h-11 items-center justify-center rounded-md border border-strong bg-elevated px-4 py-2 text-sm font-semibold text-primary transition hover:-translate-y-0.5 hover:border-steel"

@@ -70,8 +70,15 @@ for (const project of projects) {
 
 assert(publicProjects.length >= 3, "Expected at least three public projects");
 assert(challengeEntries.length >= 1, "Expected at least one challenge entry");
-assert(profile.resume.href === "/resume/nguyen-duy-duc-resume.pdf", "Resume path must stay canonical");
-validateAsset(profile.resume.href);
+assert(profile.contact.pageHref === "/#contact", "Contact links must target the portfolio contact section");
+assert(profile.resume.pageHref === "/resume", "Resume page path must stay canonical");
+assert(profile.resume.pdfHref === "/resume/nguyen-duy-duc-resume.pdf", "Resume PDF path must stay canonical");
+assert(profile.resume.fileName === "nguyen-duy-duc-resume.pdf", "Resume filename must stay canonical");
+assert(
+  profile.links.find((link) => link.kind === "resume")?.href === profile.resume.pageHref,
+  "Public resume link must use the internal resume page",
+);
+validateAsset(profile.resume.pdfHref);
 
 const publicStrings = [
   ...collectStrings(profile),
