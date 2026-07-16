@@ -1,0 +1,24 @@
+import { existsSync } from "node:fs";
+import { getProjectBySlug, getProjectSlugs, publicProjects } from "@/lib/content/projects";
+import { profile } from "@/content/profile";
+
+function assert(condition: unknown, message: string): asserts condition {
+  if (!condition) {
+    throw new Error(message);
+  }
+}
+
+const expectedRoutes = ["/", "/challenge", ...getProjectSlugs().map((slug) => `/work/${slug}`)];
+
+assert(expectedRoutes.includes("/work/legolas-ai"), "Legolas route missing");
+assert(expectedRoutes.includes("/work/hanoiworld"), "HanoiWorld route missing");
+assert(expectedRoutes.includes("/work/powfolio"), "Powfolio route missing");
+assert(existsSync(`public${profile.resume.href}`), "Resume PDF missing");
+
+for (const project of publicProjects) {
+  assert(getProjectBySlug(project.slug)?.title === project.title, `${project.slug} lookup failed`);
+  assert(project.visual.alt.length >= 10, `${project.slug} visual alt text too short`);
+  assert(project.contributions.length > 0, `${project.slug} contributions missing`);
+}
+
+console.log(`Smoke-tested routes: ${expectedRoutes.join(", ")}`);
