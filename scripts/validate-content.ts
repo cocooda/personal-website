@@ -1,6 +1,5 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
-import { challengeEntries } from "@/lib/content/challenge";
 import { projects, publicProjects } from "@/lib/content/projects";
 import { profile } from "@/content/profile";
 
@@ -69,7 +68,6 @@ for (const project of projects) {
 }
 
 assert(publicProjects.length >= 3, "Expected at least three public projects");
-assert(challengeEntries.length >= 1, "Expected at least one challenge entry");
 assert(profile.contact.pageHref === "/#contact", "Contact links must target the portfolio contact section");
 assert(profile.resume.pageHref === "/resume", "Resume page path must stay canonical");
 assert(profile.resume.pdfHref === "/resume/nguyen-duy-duc-resume.pdf", "Resume PDF path must stay canonical");
@@ -83,7 +81,6 @@ validateAsset(profile.resume.pdfHref);
 const publicStrings = [
   ...collectStrings(profile),
   ...projects.flatMap((project) => collectStrings(project)),
-  ...challengeEntries.flatMap((entry) => collectStrings(entry)),
 ];
 
 for (const text of publicStrings) {
@@ -92,4 +89,4 @@ for (const text of publicStrings) {
   }
 }
 
-console.log(`Validated ${projects.length} projects and ${challengeEntries.length} challenge entries.`);
+console.log(`Validated ${projects.length} projects.`);

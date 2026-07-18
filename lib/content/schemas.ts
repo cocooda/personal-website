@@ -22,7 +22,12 @@ export const GalleryItemSchema = z.object({
   src: z.string().startsWith("/"),
   alt: z.string().min(10),
   caption: z.string().optional(),
-  kind: z.enum(["diagram", "benchmark", "workflow", "placeholder", "screenshot"]),
+  kind: z.enum(["product-ui", "simulation", "diagram", "evidence"]),
+});
+
+export const HomepageVisualAdjustmentSchema = z.object({
+  brightness: z.number().positive().optional(),
+  contrast: z.number().positive().optional(),
 });
 
 export const CaseStudySectionSchema = z.object({
@@ -51,6 +56,7 @@ export const ProjectSchema = z.object({
   contributionBoundary: z.string().min(1),
   proofPoint: z.string().min(1),
   visual: GalleryItemSchema,
+  homepageVisualAdjustment: HomepageVisualAdjustmentSchema.optional(),
   contributions: z.array(z.string().min(1)).min(1),
   outcomes: z.array(z.string().min(1)).default([]),
   metrics: z.array(MetricSchema).default([]),
@@ -88,16 +94,3 @@ export const CapabilitySchema = z.object({
 });
 
 export type Capability = z.infer<typeof CapabilitySchema>;
-
-export const ChallengeEntrySchema = z.object({
-  day: z.number().int().min(0),
-  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-  title: z.string().min(1),
-  status: z.enum(["planned", "in-progress", "shipped"]),
-  summary: z.string().min(1),
-  shipped: z.array(z.string().min(1)).default([]),
-  nextStep: z.string().min(1),
-  links: z.array(LinkSchema).default([]),
-});
-
-export type ChallengeEntry = z.infer<typeof ChallengeEntrySchema>;

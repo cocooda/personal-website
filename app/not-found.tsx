@@ -7,7 +7,7 @@ export default function NotFound() {
         <p className="font-mono text-xs font-bold uppercase text-steel">404</p>
         <h1 className="mt-4 text-4xl font-bold text-primary">This route is not part of the portfolio.</h1>
         <p className="mt-4 text-base leading-8 text-secondary">
-          The public routes are the homepage, selected work case studies, the challenge log, and the stable resume path.
+          The public routes are the homepage, selected work case studies, and the stable resume path.
         </p>
         <Link
           href="/"

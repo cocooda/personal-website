@@ -1,21 +1,30 @@
-import { ChallengeTeaser } from "@/components/sections/ChallengeTeaser";
+"use client";
+
+import { useState } from "react";
+import { OpeningLoader } from "@/components/ui/OpeningLoader";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
-import { HeroSection } from "@/components/sections/HeroSection";
+import { HeroWorkStage } from "@/components/sections/HeroWorkStage";
 import { ProcessSection } from "@/components/sections/ProcessSection";
-import { ProofStrip } from "@/components/sections/ProofStrip";
-import { SelectedWork } from "@/components/sections/SelectedWork";
 
 export default function HomePage() {
+  const [loaderComplete, setLoaderComplete] = useState(false);
+
   return (
     <>
-      <HeroSection />
-      <ProofStrip />
-      <SelectedWork />
-      <ProcessSection />
-      <ExperienceSection />
-      <ChallengeTeaser />
-      <ContactSection />
+      <OpeningLoader onComplete={() => setLoaderComplete(true)} />
+      <div 
+        className={
+          loaderComplete 
+            ? "opacity-100 transition-opacity duration-700 ease-out" 
+            : "opacity-0 h-screen overflow-hidden"
+        }
+      >
+        <HeroWorkStage />
+        <ProcessSection />
+        <ExperienceSection />
+        <ContactSection />
+      </div>
     </>
   );
 }

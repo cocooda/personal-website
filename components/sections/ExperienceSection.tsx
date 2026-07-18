@@ -1,67 +1,116 @@
+"use client";
+
 import { capabilities } from "@/content/capabilities";
 import { experience } from "@/content/experience";
 import { profile } from "@/content/profile";
-import { SectionHeading } from "@/components/sections/SectionHeading";
 
 export function ExperienceSection() {
   return (
-    <section id="about" className="scroll-mt-24 py-20 md:py-28">
-      <div className="container-shell grid gap-12 lg:grid-cols-[1fr_0.9fr]">
-        <div>
-          <SectionHeading
-            eyebrow="Experience"
-            title="Concise evidence, not a copied CV."
-            body="The timeline keeps the work readable while the resume remains the formal artifact."
-          />
-          <div className="mt-10 grid gap-5">
+    <section 
+      id="about" 
+      className="scroll-mt-20 py-24 md:py-32 bg-bg-experience text-text-experience border-t border-white/5"
+    >
+      <div className="container-shell grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        
+        {/* LEFT COLUMN: Experience Timeline */}
+        <div className="lg:col-span-7 flex flex-col">
+          <span className="font-mono text-xs text-secondary uppercase tracking-wider block mb-3">
+            04 / EXPERIENCE
+          </span>
+          <h3 className="text-4xl md:text-5xl font-black tracking-tight leading-none text-primary mb-12">
+            Applied Practice
+          </h3>
+
+          <div className="flex flex-col gap-10">
             {experience.map((item) => (
-              <article key={`${item.company}-${item.role}`} className="border-l border-strong pl-5">
-                <p className="font-mono text-xs uppercase text-muted">
-                  {item.start} - {item.end} / {item.location}
-                </p>
-                <h3 className="mt-2 text-xl font-bold text-primary">{item.role}</h3>
-                <p className="mt-1 text-sm font-semibold text-steel">{item.company}</p>
-                <p className="mt-3 text-sm leading-7 text-secondary">{item.summary}</p>
-                <ul className="mt-3 grid gap-2 text-sm leading-6 text-secondary">
-                  {item.highlights.map((highlight) => (
-                    <li key={highlight} className="flex gap-3">
-                      <span aria-hidden="true" className="mt-2 size-1.5 rounded-full bg-teal" />
-                      <span>{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
-              </article>
+              <div 
+                key={`${item.company}-${item.role}`} 
+                className="grid grid-cols-1 md:grid-cols-12 gap-4 pb-10 border-b border-white/5 last:border-0 last:pb-0"
+              >
+                {/* Period */}
+                <div className="md:col-span-4 flex flex-col">
+                  <span className="font-mono text-xs text-secondary/70 font-semibold uppercase">
+                    {item.start}
+                  </span>
+                  <span className="font-mono text-xs text-secondary/50 uppercase mt-0.5">
+                    to {item.end.replace("Expected: ", "")}
+                  </span>
+                  <span className="text-[10px] font-mono text-secondary/40 mt-1 uppercase">
+                    {item.location}
+                  </span>
+                </div>
+
+                {/* Content */}
+                <div className="md:col-span-8">
+                  <h4 className="text-lg font-bold text-primary leading-snug">
+                    {item.role}
+                  </h4>
+                  <p className="text-sm font-semibold text-accent-dim text-accent/80 bg-base/90 inline-block px-2.5 py-0.5 rounded-full mt-1.5 font-mono select-none">
+                    {item.company}
+                  </p>
+                  
+                  <p className="mt-3.5 text-sm leading-relaxed text-secondary">
+                    {item.summary}
+                  </p>
+
+                  <ul className="mt-4 flex flex-col gap-2">
+                    {item.highlights.slice(0, 2).map((highlight, hIdx) => (
+                      <li key={hIdx} className="flex gap-2.5 items-start text-xs text-secondary leading-relaxed">
+                        <span className="size-1 rounded-full bg-accent mt-1.5 shrink-0" />
+                        <span>{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             ))}
           </div>
         </div>
-        <div className="grid gap-5">
-          <div className="surface rounded-lg p-5">
-            <p className="font-mono text-xs font-bold uppercase text-steel">Education</p>
-            <div className="mt-5 grid gap-4">
-              {profile.education.map((education) => (
-                <div key={education.institution} className="rounded-md border border-subtle bg-base/44 p-4">
-                  <h3 className="font-bold text-primary">{education.institution}</h3>
-                  <p className="mt-2 text-sm text-secondary">{education.degree}</p>
-                  <p className="mt-1 font-mono text-xs text-muted">
-                    {education.period}
-                    {"detail" in education && education.detail ? ` / ${education.detail}` : ""}
+
+        {/* RIGHT COLUMN: Education & Capabilities */}
+        <div className="lg:col-span-5 flex flex-col gap-12">
+          {/* Education */}
+          <div>
+            <span className="font-mono text-xs text-secondary uppercase tracking-wider block mb-6 border-b border-white/5 pb-2">
+              EDUCATION
+            </span>
+            <div className="flex flex-col gap-6">
+              {profile.education.map((edu) => (
+                <div key={edu.institution} className="flex flex-col">
+                  <h4 className="text-sm font-bold text-primary leading-snug">
+                    {edu.institution}
+                  </h4>
+                  <span className="text-xs text-secondary mt-1">
+                    {edu.degree}
+                  </span>
+                  <span className="font-mono text-[10px] text-secondary mt-1">
+                    {edu.period} {"detail" in edu && edu.detail ? ` / ${edu.detail}` : ""}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Capabilities */}
+          <div>
+            <span className="font-mono text-xs text-secondary uppercase tracking-wider block mb-6 border-b border-white/5 pb-2">
+              CAPABILITIES
+            </span>
+            <div className="flex flex-col gap-6">
+              {capabilities.slice(0, 3).map((cap) => (
+                <div key={cap.title} className="flex flex-col">
+                  <h4 className="text-sm font-bold text-primary leading-snug">
+                    {cap.title}
+                  </h4>
+                  <p className="text-xs leading-relaxed text-secondary mt-1.5">
+                    {cap.summary}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="surface rounded-lg p-5">
-            <p className="font-mono text-xs font-bold uppercase text-steel">Capabilities</p>
-            <div className="mt-5 grid gap-4">
-              {capabilities.map((capability) => (
-                <div key={capability.title} className="rounded-md border border-subtle bg-base/44 p-4">
-                  <h3 className="font-bold text-primary">{capability.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-secondary">{capability.summary}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
+
       </div>
     </section>
   );

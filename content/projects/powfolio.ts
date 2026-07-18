@@ -39,7 +39,7 @@ const powfolio = {
   outcomes: [
     "Audited test run passed with 26 tests.",
     "No public adoption claim is made.",
-    "The project stays in the Currently Building and challenge narrative instead of competing with Legolas AI.",
+    "The project stays in the Currently Building narrative instead of competing with Legolas AI.",
   ],
   metrics: [
     {
@@ -78,7 +78,7 @@ const powfolio = {
       eyebrow: "Currently building",
       body: [
         "Powfolio is a local-first project showcase compiler. It is meant for developers who have real work in private repos, NDA-adjacent projects, or local experiments but need public-safe proof for a CV or portfolio.",
-        "It is deliberately not presented as a validated flagship product. The site treats it as a product experiment and as part of the evolving 30-day public build log.",
+        "It is deliberately not presented as a validated flagship product. The site treats it as a product experiment with clear validation boundaries.",
       ],
       bullets: [
         "Local-first CLI product experiment.",
@@ -110,7 +110,7 @@ const powfolio = {
       bullets: [
         "MVP pipeline exists and is tested locally.",
         "No adoption or public demo claim is made.",
-        "Next validation step is shipping it through the 30-day challenge.",
+        "Next validation step is shipping a public-safe workflow from the local MVP.",
       ],
     },
   ],

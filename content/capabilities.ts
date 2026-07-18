@@ -7,7 +7,7 @@ export const capabilities = [
       "Translate ambiguous operational pain into user flows, success criteria, and buildable product slices.",
     examples: [
       "Legal assistant workflows for cited Q&A, drafting, and document review.",
-      "Public build-log framing for a 30-day portfolio launch cycle.",
+      "Portfolio IA that separates proof, boundaries, and project hierarchy.",
     ],
   },
   {

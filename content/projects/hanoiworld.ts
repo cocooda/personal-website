@@ -25,10 +25,10 @@ const hanoiWorld = {
   proofPoint:
     "Implemented JEPA-style observation encoding modules used by RSSM latent dynamics and actor-critic control.",
   visual: {
-    src: "/projects/hanoiworld/world-model.svg",
-    alt: "Diagram of HanoiWorld observation encoding, latent dynamics, control, and evaluation loop.",
-    caption: "Generated system diagram from CV-supported project description.",
-    kind: "diagram",
+    src: "/projects/hanoiworld/roundabout-simulation.png",
+    alt: "Roundabout driving simulation environment from the public HanoiWorld project repository.",
+    caption: "Factual driving-simulation figure from the public HanoiWorld repository.",
+    kind: "simulation",
   },
   contributions: [
     "Implemented JEPA-style observation encoding modules for compact driving-scene representations.",
@@ -53,7 +53,7 @@ const hanoiWorld = {
     {
       src: "/projects/hanoiworld/world-model.svg",
       alt: "HanoiWorld world-model loop from observations to latent dynamics and policy evaluation.",
-      caption: "Public-safe diagram; no private experiment screenshots are used.",
+      caption: "Labelled system diagram for the JEPA, RSSM, actor-critic, and scenario-evaluation loop.",
       kind: "diagram",
     },
   ],

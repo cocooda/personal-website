@@ -28,7 +28,7 @@ const legolasAi = {
     src: "/projects/legolas-ai/evidence-map.svg",
     alt: "Diagram of Legolas AI workflows, retrieval, evaluation, deployment, and observability evidence.",
     caption: "Generated evidence map from verified project architecture and benchmark context.",
-    kind: "diagram",
+    kind: "evidence",
   },
   contributions: [
     "Co-developed three end-to-end workflows: citation-grounded Q&A, template-based drafting, and document review.",
@@ -85,7 +85,7 @@ const legolasAi = {
       src: "/projects/legolas-ai/workflow.svg",
       alt: "Legolas AI workflow diagram showing Q&A, drafting, and document review.",
       caption: "Product workflow diagram generated from verified project features.",
-      kind: "workflow",
+      kind: "diagram",
     },
     {
       src: "/projects/legolas-ai/architecture.svg",
@@ -97,7 +97,7 @@ const legolasAi = {
       src: "/projects/legolas-ai/benchmark.svg",
       alt: "Benchmark visualization for citation hit rate, legal-number recall, and multi-source fact score.",
       caption: "Benchmark values from the formal CV, shown with the 30-case context.",
-      kind: "benchmark",
+      kind: "evidence",
     },
   ],
   liveUrl: "https://legolas-ai-staging.vercel.app",

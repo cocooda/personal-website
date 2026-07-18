@@ -20,3 +20,12 @@ pnpm-debug.log*
 .pow/briefs/
 .pow/cache/
 .pow/manual_notes.md
+
+# Removed internal design artifacts
+task.md
+walkthrough.md
+design-qa.md
+docs/portfolio/
+reference.png
+scripts/capture-hero-qa.ts
+scripts/capture-process-qa.ts

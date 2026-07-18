@@ -8,7 +8,7 @@ function assert(condition: unknown, message: string): asserts condition {
   }
 }
 
-const expectedRoutes = ["/", "/challenge", profile.resume.pageHref, ...getProjectSlugs().map((slug) => `/work/${slug}`)];
+const expectedRoutes = ["/", profile.resume.pageHref, ...getProjectSlugs().map((slug) => `/work/${slug}`)];
 
 assert(profile.contact.pageHref === "/#contact", "Contact navigation target changed");
 assert(profile.resume.pageHref === "/resume", "Resume page route changed");

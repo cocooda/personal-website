@@ -5,7 +5,6 @@ import { publicProjects } from "@/lib/content/projects";
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
-    "/challenge",
     ...publicProjects.map((project) => `/work/${project.slug}`),
   ];
 

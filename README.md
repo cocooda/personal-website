@@ -13,11 +13,10 @@ Static-first personal portfolio for Nguyen Duy Duc, positioned as an AI Product 
 
 ## Routes
 
-- `/` - homepage with hero, proof strip, selected work, process, experience, challenge teaser, and contact
+- `/` - homepage with hero, selected work, process, experience, and contact
 - `/work/legolas-ai` - flagship Legolas AI case study
 - `/work/hanoiworld` - secondary technical/research case study
 - `/work/powfolio` - currently-building product experiment
-- `/challenge` - 30-Day Challenge build log
 - `/resume/nguyen-duy-duc-resume.pdf` - stable resume path
 
 ## Content Architecture
@@ -29,7 +28,6 @@ Routine content changes should happen in `content/`, not React layout components
 - `content/capabilities.ts` - capability groups
 - `content/process.ts` - build process steps
 - `content/projects/*.ts` - one canonical source for project preview, quick view, and case-study route
-- `content/challenge/*.ts` - independent challenge entries
 - `public/projects/<slug>/` - public-safe diagrams and media
 - `public/resume/nguyen-duy-duc-resume.pdf` - formal downloadable resume
 
@@ -77,7 +75,7 @@ After Vercel deploys:
 2. Check the homepage hero and proof strip.
 3. Expand at least one project quick view with keyboard and pointer.
 4. Open `/work/legolas-ai`, `/work/hanoiworld`, and `/work/powfolio`.
-5. Open `/challenge`.
+5. Open `/resume`.
 6. Open `/resume/nguyen-duy-duc-resume.pdf`.
 7. Check the mobile navigation.
 8. Confirm no console or hydration errors.

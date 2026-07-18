@@ -4,14 +4,22 @@ export type ButtonVariant = "primary" | "secondary" | "ghost";
 
 export function buttonClassName(variant: ButtonVariant = "secondary", className?: string) {
   return cn(
-    "inline-flex min-h-11 items-center justify-center gap-2 rounded-md border px-4 py-2 text-sm font-semibold transition duration-200",
-    "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-steel",
+    "inline-flex min-h-12 items-center justify-center gap-2 rounded-full border px-6 py-2.5 text-sm font-semibold transition-all duration-300 active:scale-95 shadow-sm",
+    "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent",
+    
+    // Primary variant: solid high-contrast capsule
     variant === "primary" &&
-      "border-fog bg-fog cta-ink shadow-[0_12px_40px_rgba(231,226,216,0.16)] hover:-translate-y-0.5 hover:bg-primary",
+      "border-transparent bg-primary text-base hover:bg-accent hover:shadow-[0_0_15px_rgba(169, 214, 255,0.3)] dark:bg-primary dark:text-base dark:hover:bg-accent",
+      
+    // Secondary variant: outline / frosted glass capsule
     variant === "secondary" &&
-      "border-strong bg-elevated/70 text-primary hover:-translate-y-0.5 hover:border-steel hover:bg-panel",
+      "border-white/10 bg-elevated/60 text-primary hover:border-white/30 hover:bg-panel hover:shadow-md",
+      
+    // Ghost variant: text only with hover background
     variant === "ghost" &&
-      "border-transparent bg-transparent text-secondary hover:text-primary",
-    className,
+      "border-transparent bg-transparent text-secondary hover:text-primary hover:bg-white/5",
+      
+    className
   );
 }
+
